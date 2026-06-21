@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#planets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#planets div {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.2s;
+}
+#planets div:hover {
+  transform: translateY(-3px);
+}
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalContent {
+  background: white;
+  padding: 20px;
+
+  width: 600px;
+  max-width: 90vw;
+  max-height: 80vh;
+
+  overflow-y: auto;
+
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+#modalBody ul {
+  padding-left: 20px;
+}
+
+#modalBody li {
+  margin-bottom: 10px;
+}
+#modalBody {
+  font-size: 14px;
+}
+
+#modalBody h2,
+#modalBody h3 {
+  margin-bottom: 8px;
+}
+
+#modalBody p {
+  margin: 5px 0;
+}
+
+#modalBody li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+#closeModal {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  float: right;
+}
+#modalBody h2 {
+  margin-top: 0;
+}
+
+#modalBody h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
