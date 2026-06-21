@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "lib": ["es2019", "dom"],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "outDir": "./tsDist/",
+    "rootDir": "./app",
+    "experimentalDecorators": true,
+    "baseUrl": "app",
+    "importHelpers": true,
+
+    "paths": {
+      "@services/*": ["services/*"],
+      "@rest/*": ["services/rest/*"],
+      "@assets/*": ["assets/*"],
+      "@myCss": ["assets/styles/main.scss"]
+    }
+  },
+
+  "include": ["./**/*"],
+
+  "exclude": ["node_modules"],
+
+  "compileOnSave": false
+}
