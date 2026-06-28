@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import BurgerMenu from "../burgerMenu/burgerMenu";
 import useWindowWidth from "../../hooks/useWindowWidth";
+import { useContext } from "react";
+import { ThemeContext } from "../../context/themeContext";
 
 function Header() {
   const width = useWindowWidth();
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <header className="header">
       <div className="header-container">
@@ -30,6 +33,9 @@ function Header() {
             </HashLink>
           </nav>
         )}
+        <button className="theme-button" onClick={toggleTheme}>
+          {theme === "light" ? "Темная тема" : "Светлая тема"}
+        </button>
       </div>
     </header>
   );

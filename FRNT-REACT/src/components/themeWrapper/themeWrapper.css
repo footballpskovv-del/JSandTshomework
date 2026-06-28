@@ -1,0 +1,161 @@
+.theme-light {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.theme-dark {
+  min-height: 100vh;
+  background: #071124;
+  color: #ffffff;
+}
+
+.theme-dark .header {
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
+}
+
+.theme-dark .logo,
+.theme-dark .nav a,
+.theme-dark .burger-menu a {
+  color: #ffffff;
+}
+
+.theme-dark .blog-card,
+.theme-dark .work-card,
+.theme-dark .contacts-card {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.theme-dark .blog-card p,
+.theme-dark .work-card p {
+  color: #cbd5e1;
+}
+.theme-dark .works-page {
+  background: #071124;
+  color: #ffffff;
+}
+
+.theme-dark .works-page h1 {
+  color: #ffffff;
+}
+
+.theme-dark .works-page-text {
+  color: #cbd5e1;
+}
+
+.theme-dark .work-slide {
+  background: #0f172a;
+  color: #ffffff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.theme-dark .work-slide-info h2 {
+  color: #60a5fa;
+}
+
+.theme-dark .work-slide-info p {
+  color: #cbd5e1;
+}
+
+.theme-light .works-page {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  color: #0f172a;
+}
+
+.theme-light .works-page h1 {
+  color: #0f172a;
+}
+
+.theme-light .works-page-text {
+  color: #64748b;
+}
+
+.theme-light .work-slide {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.theme-light .work-slide-info p {
+  color: #475569;
+}
+/* Светлая тема */
+.theme-light .hero {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.theme-light .hero h1 {
+  color: #0f172a;
+}
+
+.theme-light .hero p {
+  color: #475569;
+}
+
+.theme-light .hero button {
+  background: #2563eb;
+  color: white;
+}
+
+/* Темная тема */
+.theme-dark .hero {
+  background: #071124;
+}
+
+.theme-dark .hero h1 {
+  color: white;
+}
+
+.theme-dark .hero p {
+  color: #cbd5e1;
+}
+
+.theme-dark .hero button {
+  background: white;
+  color: #071124;
+}
+.theme-dark .works {
+  background: #071124;
+  color: #ffffff;
+}
+
+.theme-dark .works h2 {
+  color: #ffffff;
+}
+
+.theme-dark .work-card {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #334155;
+}
+
+.theme-dark .work-card h3 {
+  color: #ffffff;
+}
+
+.theme-dark .work-card p {
+  color: #cbd5e1;
+}
+
+.theme-light .works {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.theme-light .works h2 {
+  color: #0f172a;
+}
+
+.theme-light .work-card {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.theme-light .work-card h3 {
+  color: #0f172a;
+}
+
+.theme-light .work-card p {
+  color: #475569;
+}
