@@ -1,0 +1,35 @@
+.blog-post {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 90px 24px;
+}
+
+.blog-post h1 {
+  font-size: 42px;
+}
+
+.blog-post a {
+  color: #2563eb;
+  font-weight: 700;
+}
+.blog-post {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+.blog-post h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.blog-text {
+  font-size: 24px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.blog-author {
+  font-size: 18px;
+  color: #666;
+}

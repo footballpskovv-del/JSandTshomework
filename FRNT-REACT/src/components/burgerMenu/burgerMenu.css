@@ -1,0 +1,13 @@
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  background: white;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 600;
+}
