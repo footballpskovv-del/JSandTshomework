@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import Button from "../Button/Button";
 import "./RegisterForm.css";
 
 type FormValues = {
@@ -9,6 +11,8 @@ type FormValues = {
 };
 
 function RegisterForm() {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -17,7 +21,7 @@ function RegisterForm() {
 
   function onSubmit(data: FormValues) {
     console.log("Данные формы:", data);
-    alert("Регистрация успешно выполнена!");
+    navigate("/boards");
   }
 
   return (
@@ -34,8 +38,8 @@ function RegisterForm() {
           <span className="section-label">React Hook Form</span>
           <h2>Регистрация</h2>
           <p>
-            Форма содержит три поля: имя, email и пароль. Для каждого поля
-            настроена простая валидация.
+            Форма содержит три поля: имя, email и пароль. После успешной
+            валидации происходит переход на страницу с досками.
           </p>
         </div>
 
@@ -84,7 +88,7 @@ function RegisterForm() {
             {errors.password && <span>{errors.password.message}</span>}
           </label>
 
-          <button type="submit">Зарегистрироваться</button>
+          <Button type="submit">Зарегистрироваться</Button>
         </form>
       </div>
     </motion.section>

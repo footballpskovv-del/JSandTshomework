@@ -16,7 +16,6 @@ function Header() {
 
         <nav>
           <a href="#slider">Слайдер</a>
-          <a href="#registration">Регистрация</a>
         </nav>
       </div>
     </motion.header>

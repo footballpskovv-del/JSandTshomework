@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
+import Button from "../Button/Button";
 import "./Hero.css";
 
-function Hero() {
+type HeroProps = {
+  onOpenForm: () => void;
+};
+
+function Hero({ onOpenForm }: HeroProps) {
   return (
     <section className="hero">
       <motion.div
@@ -11,9 +16,13 @@ function Hero() {
         transition={{ duration: 0.7 }}
       >
         <span>React + TypeScript</span>
-        <h1>Шаблон ФОрмы</h1>
-        <p>страница с анимацией, формой регистрации, валидацией и слайдером</p>
-        <a href="#registration">Перейти к регистрации</a>
+        <h1>Учебный проект на React TS</h1>
+        <p>
+          Главная страница с анимацией, формой регистрации, валидацией и досками
+          задач.
+        </p>
+
+        <Button onClick={onOpenForm}>Зарегистрироваться</Button>
       </motion.div>
 
       <motion.div
@@ -23,7 +32,7 @@ function Hero() {
         transition={{ duration: 0.7 }}
       >
         <h2>Frontend</h2>
-        <p>Vite • React • TypeScript • Framer Motion • React Hook Form</p>
+        <p>Vite • React • TypeScript • React Hook Form</p>
       </motion.div>
     </section>
   );
