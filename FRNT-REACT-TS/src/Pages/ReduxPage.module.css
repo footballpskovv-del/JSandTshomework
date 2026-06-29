@@ -1,0 +1,105 @@
+.page {
+  min-height: 100vh;
+  padding: 110px 24px;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  color: #0f172a;
+}
+
+.card {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 42px;
+  border-radius: 28px;
+  background: white;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+}
+
+.card h1 {
+  font-size: 48px;
+  margin: 0 0 14px;
+}
+
+.card p {
+  color: #475569;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+  margin: 30px 0;
+}
+
+.form input {
+  padding: 15px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.buttons button {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.buttons button:last-child {
+  background: #0f172a;
+}
+
+.error {
+  color: #dc2626 !important;
+  font-weight: 700;
+}
+
+.userBox {
+  margin: 30px 0;
+  padding: 24px;
+  border-radius: 20px;
+  background: #f8fafc;
+}
+
+.userBox h2,
+.todos h2 {
+  margin-top: 0;
+}
+
+.todos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.todos li {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.todos strong {
+  color: #2563eb;
+}
+
+@media (max-width: 700px) {
+  .card {
+    padding: 26px 18px;
+  }
+
+  .todos li {
+    flex-direction: column;
+  }
+}

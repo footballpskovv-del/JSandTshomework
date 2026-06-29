@@ -32,3 +32,21 @@
   color: #0f172a;
   font-weight: 700;
 }
+.nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav a,
+.nav-link {
+  color: #0f172a;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover,
+.nav-link:hover {
+  color: #2563eb;
+}

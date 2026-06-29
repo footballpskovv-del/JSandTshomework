@@ -6,6 +6,7 @@ import RegisterForm from "./components/RegisterForm/RegisterForm";
 import Slider from "./components/Slider/Slider";
 import Boards from "./Pages/Boards";
 import "./App.css";
+import ReduxPage from "./Pages/ReduxPage";
 
 function HomePage() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -37,6 +38,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/boards" element={<Boards />} />
+      <Route path="/redux" element={<ReduxPage />} />
     </Routes>
   );
 }

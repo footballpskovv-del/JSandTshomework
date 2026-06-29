@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -10,12 +11,16 @@ function Header() {
       transition={{ duration: 0.5 }}
     >
       <div className="header-container">
-        <a href="#" className="logo">
+        <Link to="/" className="logo">
           ReactTS
-        </a>
+        </Link>
 
         <nav>
           <a href="#slider">Слайдер</a>
+
+          <Link to="/redux" className="nav-link">
+            Redux
+          </Link>
         </nav>
       </div>
     </motion.header>
